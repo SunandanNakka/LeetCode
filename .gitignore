@@ -9,3 +9,14 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+.settings
+*.settings
+*/out/
+*.iml
+.DS_Store
+*.DS_Store
+*out/*
+logs/*
+*/logs/*
+.idea/*
+*.idea/workspace.xml
