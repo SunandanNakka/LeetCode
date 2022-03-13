@@ -6,10 +6,16 @@ import org.apache.log4j.Logger;
 
 import java.util.Arrays;
 
-public class TwoSum {
-    private static final Logger logger = LogManager.getLogger(TwoSum.class);
+/* 1. Two Sum
 
-    public int[] twoSum(int[] nums, int target) {
+    Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+    You may assume that each input would have exactly one solution, and you may not use the same element twice.
+    You can return the answer in any order.
+*/
+public class Solution_1 {
+    private static final Logger logger = LogManager.getLogger(Solution_1.class);
+
+    private int[] twoSum(int[] nums, int target) {
         int[] answer = {0,1};
         int arrayLen = nums.length;
 
@@ -35,10 +41,10 @@ public class TwoSum {
         return answer;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         BasicConfigurator.configure();
 
-        TwoSum twoSum = new TwoSum();
-        logger.info(Arrays.toString(twoSum.twoSum(new int[]{1,2,3}, 5)));
+        Solution_1 solution = new Solution_1();
+        logger.info(Arrays.toString(solution.twoSum(new int[]{1,2,3}, 5)));
     }
 }
